@@ -3,9 +3,8 @@
 API REST construida en Go con PostgreSQL para rastrear series y documentales deportivos.
 El servidor solo responde JSON, nunca genera HTML.
 
-**🖥️ Frontend repo:** [sportstracker-frontend](https://github.com/TU_USUARIO/sportstracker-frontend)  
-**🌐 API en producción:** https://TU_APP.up.railway.app  
-**📄 Swagger UI:** https://TU_APP.up.railway.app/docs/
+**🖥️ Frontend repo:** [sportstracker-frontend](https://github.com/HipWilson/sportstracker-frontend.git)  
+**🌐 API en producción:** [https://TU_APP.up.railway.app](https://sportstracker-backend-production.up.railway.app)
 
 ---
 
@@ -23,7 +22,7 @@ El servidor solo responde JSON, nunca genera HTML.
 
 ## ¿Qué es CORS y qué se configuró?
 
-CORS (Cross-Origin Resource Sharing) es un mecanismo de seguridad del navegador que bloquea peticiones HTTP entre orígenes distintos (diferente dominio, puerto o protocolo). Como el frontend corre en GitHub Pages y el backend en Railway, el navegador los trata como orígenes distintos y bloquearía las peticiones `fetch()` por defecto.
+CORS es un mecanismo de seguridad del navegador que bloquea peticiones HTTP entre orígenes distintos. Como el frontend corre en GitHub Pages y el backend en Railway, el navegador los trata como orígenes distintos y bloquearía las peticiones `fetch()` por defecto.
 
 Se configuró el middleware `go-chi/cors` con los siguientes headers:
 
