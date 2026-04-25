@@ -1,0 +1,6 @@
+.env
+uploads/
+*.exe
+*.test
+/tmp
+sportstracker
